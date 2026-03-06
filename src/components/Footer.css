@@ -1,70 +1,174 @@
-.site-footer {
-    background-color: #181825;
-    color: #a6adc8;
-    padding: 60px 10% 20px 10%;
-    /* Padding equilibrado */
-    border-top: 1px solid #313244;
-    font-family: 'Courier New', Courier, monospace;
+/* ===== FOOTER.CSS ===== */
+
+.footer {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border);
+  padding: 64px 0 40px;
+  position: relative;
+  overflow: hidden;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 40px;
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.4;
 }
 
-.footer-brand h3 {
-    color: #89b4fa;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.footer-links {
-    display: flex;
+/* Top */
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+/* Brand */
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 240px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  transition: opacity 0.2s;
+}
+
+.footer__logo:hover {
+  opacity: 0.8;
+}
+
+.footer__logo span {
+  color: var(--accent);
+}
+
+.footer__logo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.footer__tagline {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Nav */
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.footer__nav-link:hover {
+  color: var(--accent);
+  padding-left: 6px;
+}
+
+/* Socials */
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer__social {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.footer__social:hover {
+  color: var(--accent);
+  border-color: var(--border-hover);
+  background: var(--accent-dim);
+}
+
+/* Divider */
+.footer__divider {
+  height: 1px;
+  background: var(--border);
+  transform-origin: left;
+}
+
+/* Bottom */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__copy {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer__heart {
+  color: #ff6b8a;
+}
+
+.footer__made {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer__made strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer__top {
     flex-direction: column;
-    gap: 12px;
-}
+    gap: 32px;
+  }
 
-.footer-links h4 {
-    color: #cba6f7;
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
+  .footer__nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
 
-.footer-links a {
-    color: #a6adc8;
-    text-decoration: none;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    /* Espaço entre ícone e texto */
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: #89b4fa;
-}
-
-/* Barra de Status integrada ao final (sem ser fixa) */
-.footer-status-bar {
-    background-color: #3174f1;
-    color: white;
-    padding: 8px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.75rem;
-    margin: 0 -11.2%;
-    /* Estica para as bordas compensando o padding do pai */
-    margin-top: 20px;
-}
-
-.status-left,
-.status-right {
-    display: flex;
-    gap: 15px;
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }

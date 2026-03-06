@@ -1,0 +1,9 @@
+/* ===== APP.CSS ===== */
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+main > section {
+  scroll-margin-top: 80px;
+}
