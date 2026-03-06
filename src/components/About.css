@@ -1,0 +1,97 @@
+.about-section {
+    padding: 80px 10%;
+    background-color: #1e1e2e;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    /* Alinha no topo como um editor */
+    flex-wrap: wrap;
+}
+
+.about-left {
+    flex: 1.2;
+    min-width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Reutilizando o estilo de tags de código */
+.code-tag {
+    color: #585b70;
+    font-size: 1rem;
+    display: block;
+    margin: 5px 0;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    color: white;
+    font-family: sans-serif;
+    /* Título principal sem ser mono para destaque */
+    margin: 10px 0;
+}
+
+.title-highlight {
+    color: #f38ba8;
+}
+
+.about-description {
+    color: #a6adc8;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+
+/* Coluna da Direita: Cards estilo "File Explorer" */
+.about-right {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 300px;
+}
+
+.skill-card {
+    background: #181825;
+    /* Fundo igual ao da Galeria */
+    border: 1px solid #313244;
+    padding: 20px;
+    border-radius: 4px;
+    /* Mais quadrado */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skill-card:hover {
+    border-color: #89b4fa;
+    transform: translateX(10px);
+}
+
+/* Card em destaque no padrão Code */
+.skill-card.featured {
+    border-left: 4px solid #f38ba8;
+    background: #24273a;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: #89b4fa;
+}
+
+.skill-info h4 {
+    color: #cba6f7;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.skill-info p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}

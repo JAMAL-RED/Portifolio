@@ -1,0 +1,70 @@
+.site-footer {
+    background-color: #181825;
+    color: #a6adc8;
+    padding: 60px 10% 20px 10%;
+    /* Padding equilibrado */
+    border-top: 1px solid #313244;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+    color: #89b4fa;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4 {
+    color: #cba6f7;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #a6adc8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Espaço entre ícone e texto */
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #89b4fa;
+}
+
+/* Barra de Status integrada ao final (sem ser fixa) */
+.footer-status-bar {
+    background-color: #3174f1;
+    color: white;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    margin: 0 -11.2%;
+    /* Estica para as bordas compensando o padding do pai */
+    margin-top: 20px;
+}
+
+.status-left,
+.status-right {
+    display: flex;
+    gap: 15px;
+}

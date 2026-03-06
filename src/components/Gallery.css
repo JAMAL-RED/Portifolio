@@ -1,0 +1,96 @@
+.gallery-section {
+    padding: 80px 10%;
+    background-color: #1e1e2e;
+}
+
+.section-title {
+    color: #89b4fa;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Card estilo Janela de Código */
+.card {
+    background: #181825;
+    border: 1px solid #313244;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: #89b4fa;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Topo do card imitando abas do navegador */
+.card-header {
+    background: #11111b;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #313244;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #f38ba8;
+}
+
+.yellow {
+    background: #f9e2af;
+}
+
+.green {
+    background: #a6e3a1;
+}
+
+.card-content {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-tag {
+    color: #cba6f7;
+    /* Roxo */
+    font-size: 0.8rem;
+}
+
+.card-title {
+    color: #89b4fa;
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.card-text {
+    color: #a6adc8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.card-tech-stack {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.tech-item {
+    background: #313244;
+    color: #94e2d5;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}

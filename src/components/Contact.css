@@ -1,0 +1,69 @@
+/* Contato */
+.contact-section {
+    padding: 80px 10%;
+    background-color: #1e1e2e;
+    /* border-top: 1px solid #313244; */
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #181825;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #313244;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.input-group label {
+    color: #cba6f7;
+    font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group textarea {
+    background: #1e1e2e;
+    border: 1px solid #313244;
+    padding: 12px;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #89b4fa;
+}
+
+/* Rodapé Estilo VS Code */
+.footer-status-bar {
+    background-color: #3174f1;
+    /* Azul clássico de barra de status */
+    color: white;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.status-left,
+.status-right {
+    display: flex;
+    gap: 15px;
+}

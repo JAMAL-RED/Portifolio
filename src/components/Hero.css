@@ -1,0 +1,105 @@
+.hero-container {
+    background-color: #1e1e2e;
+    /* Fundo levemente mais roxo/escuro */
+    color: white;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    /* Fonte estilo código */
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Estilo das tags HTML falsas */
+.code-tag {
+    color: #585b70;
+    font-size: 1.1rem;
+    display: block;
+    margin: 10px 0;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+.indent-2 {
+    margin-left: 40px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.name-highlight {
+    color: #89b4fa;
+    /* Azul da referência */
+}
+
+.hero-subtitle {
+    color: #a6adc8;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero-button {
+    background-color: #3174f1;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Mais quadradinho como na ref */
+    margin-top: 20px;
+}
+
+/* Lado direito (Avatar/Ícones) */
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-circle {
+    width: 300px;
+    height: 300px;
+    background: #2a2a3d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #45475a;
+}
+
+.avatar-img {
+    width: 200px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Isso remove as margens brancas e garante que tudo ocupe 100% da largura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+    /* Evita barra de rolagem lateral chata */
+    font-family: sans-serif;
+    background-color: #0f172a;
+    /* Cor de fundo para não ficar branco no resto da página */
+}
