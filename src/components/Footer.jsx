@@ -39,6 +39,7 @@ export default function Footer() {
             </a>
             <p className="footer__tagline">
         Construindo experiências digitais, um pixel de cada vez.
+        testando mudanças Git
             </p>
           </div>
 
